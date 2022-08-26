@@ -35,8 +35,8 @@ public class Prova {
 			System.out.println(informationString);
 			JsonObject json = new JsonObject();
 			json = JsonParser.parseString(informationString.toString()).getAsJsonObject();
-			JsonArray element = json.getAsJsonArray("hourly");
-			System.out.println(element.get(0).getAsString());
+			JsonElement element = json.get("latitude");
+			System.out.println(element.getAsString());
 			
 			
 		}
