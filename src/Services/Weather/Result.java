@@ -8,7 +8,7 @@ public class Result{
     public String number;
     public String postal_code;
     public String street;
-    public int confidence;
+    public double confidence;
     public String region;
     public String region_code;
     public String county;
