@@ -9,7 +9,7 @@ public class WeatherForecast {
 	
 	private String apiRootWeather = "https://api.open-meteo.com/v1/forecast?";
 	private String forecastParams = "daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_sum,windspeed_10m_max&timezone=auto";
-	private String apiRootLocation = "http://api.positionstack.com/v1/forward?access_key=d77ed0d76be5d6b096a219da1e7d8767";
+	private String apiRootLocation = "http://api.positionstack.com/v1/forward?limit=1&access_key=d77ed0d76be5d6b096a219da1e7d8767";
 	
 	public WeatherForecastResult getForecast(double latitude, double longitude) {
 		
@@ -44,9 +44,9 @@ public class WeatherForecast {
 			return null;
 		}
 		
-		Root location = new Gson().fromJson(locationString.getInformationString(), Root.class);
+		Data location = new Gson().fromJson(locationString.getInformationString(), Data.class);
 		
-		return null;
+		return getForecast(location.data.get(0).latitude, location.data.get(0).longitude);
 	    	
 	    
 	}

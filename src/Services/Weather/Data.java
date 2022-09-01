@@ -3,5 +3,5 @@ package Services.Weather;
 import java.util.ArrayList;
 
 public class Data{
-    public ArrayList<Result> results;
+    public ArrayList<Result> data;
 }
