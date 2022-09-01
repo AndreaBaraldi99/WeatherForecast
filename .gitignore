@@ -1,24 +1,56 @@
-# Composer files
-composer.phar
-vendor/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
 
-# Local configs
-config/autoload/*.local.php
+# External tool builders
+.externalToolBuilders/
 
-# Binary gettext files
-*.mo
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-# Data
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
 
-#Doctrine 2
-data/DoctrineORMModule/Proxy/
-data/DoctrineORMModule/cache/
+# CDT-specific (C/C++ Development Tooling)
+.cproject
 
-# Legacy ZF1
-demos/
-extras/documentation
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+.apt_generated_test/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
